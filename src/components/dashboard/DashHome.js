@@ -1,12 +1,28 @@
 import React from "react";
+import { Container, Row } from 'reactstrap';
+import SideNav from './SideNav';
+import BarChart from '../charts/BarChart';
 
 export default function DashHome() {
     
     return (
-        <div>
+        <div className="dashboard-wrap">
 
-       <h1>Future Dashboard home</h1>
+        <SideNav />
 
-        </div>
+        <Container>
+
+            <h4 className="greeting">Welcome</h4>
+
+            <Row className="spacer">
+            <BarChart />
+            </Row>
+
+            <Row>
+                <p>Placeholder</p>
+            </Row>
+        </Container>
+
+    </div>
     );
 }

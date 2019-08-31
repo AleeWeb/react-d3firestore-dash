@@ -1,7 +1,7 @@
 import React, { useCallback, useContext } from "react";
-import { Row, Button } from 'reactstrap';
-import app from "../../firebaseConfig";
+import { Col, Row, Button } from 'reactstrap';
 import { withRouter, Redirect, Link } from 'react-router-dom';
+import app from "../../firebaseConfig";
 import { AuthContext } from "../../Auth";
 import GoogleSignIn from './GoogleSignIn';
 
@@ -32,9 +32,9 @@ const Login = ({ history }) => {
 
     <div className="login-wrap">
 
-      <Row>
+      <Row className="row align-items-center left-inner-wrap">
    
-       
+        <Col md={6} className="login-left">
          
             <h3>Welcome! Log in below.</h3>
             <form onSubmit={handleLogin}>
@@ -50,8 +50,12 @@ const Login = ({ history }) => {
 
             <GoogleSignIn />
 
-        </Row>
+            <p>Don't have an account? Sign Up  <Link to="/register">here</Link> please!</p>
     
+        </Col>
+    
+        </Row>
+      <Col md={6} className="login-right"></Col>
     </div>
   );
 };

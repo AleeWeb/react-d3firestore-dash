@@ -3,8 +3,124 @@
 
 /* ----- Login styles ----- */
 
+.login-wrap {
+  display: inline-flex;
+  width: 100vw;
+}
+
+.login-left {
+  position: relative;
+  left: 120px;
+  width: 100%;
+  padding: 20px;
+  background-color: #FFF;
+}
+
+.left-inner-wrap {
+margin: 0 auto;
+}
+
+.login-btn {
+position: relative;
+  left: 12px;
+}
+
+.login-right{
+  background-image: url('../images/bg_professional.jpg');  
+  background-size: cover;
+  height: 100vh;
+}
+
+.firebaseui-idp-google { 
+  background-color: #F8F8F8 !important;
+}
+
 .form-fields {
-  background-color: $lightGrey;
-    border-radius: 5px;
-    border: 2px solid $greyBorder;
+width: 350px;
+height: 50px;
+background-color: $lightGrey;
+  border-radius: 5px;
+  border: 2px solid $greyBorder;
+  margin: 10px;
+  padding: 20px;
+}
+
+
+// background-color: #4885ed !important; Google Blue
+
+
+
+/* ----- Dashboard styles ----- */
+
+
+.side-nav {
+  background-color: #3d0099;
+  padding: 30px;
+  min-height: 900px;
+}
+
+.dashboard-wrap {
+  display: inline-flex;
+  background-color: #fbfcfd;
+}
+
+.card {
+  padding: 20px;
+}
+
+.spacer {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.block-wrap {
+ position: relative;
+ display: inline-flex;
+ margin-top: 20px;
+ text-align: center;
+}
+
+.canvas, .piechart-bg {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+  -ms-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+  -o-box-shadow: 7px 14px 42px 3px rgba(163, 174, 184, 0.4);
+}
+
+.piestyle {
+  position: relative;
+  top: 70px;
+}
+
+.pie-btnstyle  {
+  position: relative;
+  top: -40px;
+}
+
+.greeting {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+.pie-chart .slice {
+  stroke: black;
+}
+
+// Large screen tweaks
+@media (min-width: 1400px) {
+
+  .dashboard-wrap {
+    width: 100%;
+}
+}
+
+@media (width: 1400px) {
+
+.side-nav {
+height: 1020px;
+}
+
 }
