@@ -3,6 +3,16 @@
 
 /* ----- Login styles ----- */
 
+.form-fields {
+  width: 350px;
+  height: 50px;
+  background-color: $lightGrey;
+    border-radius: 5px;
+    border: 2px solid $greyBorder;
+    margin: 10px;
+    padding: 20px;
+  }
+
 .login-wrap {
   display: inline-flex;
   width: 100vw;
@@ -26,25 +36,45 @@ position: relative;
 }
 
 .login-right{
-  background-image: url('../images/bg_professional.jpg');  
+  background-image: url('../images/bg_analytics.jpg');  
   background-size: cover;
   height: 100vh;
+
+  &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#48D1CC, #6A5ACD);
+	opacity: .8; 
+  }
 }
+
 
 .firebaseui-idp-google { 
   background-color: #F8F8F8 !important;
 }
 
-.form-fields {
-width: 350px;
-height: 50px;
-background-color: $lightGrey;
-  border-radius: 5px;
-  border: 2px solid $greyBorder;
-  margin: 10px;
-  padding: 20px;
+.firebase-btns {
+  position: relative;
+  right: 30px;
 }
 
+.firebaseui-idp-password {
+background: linear-gradient(to bottom right,#48D1CC, #6A5ACD) !important;
+}
+
+.login-header {
+  position: relative;
+  left: 8px;
+  margin-bottom: 20px;
+}
+
+.btn-info {
+  margin-bottom: 30px;
+}
 
 // background-color: #4885ed !important; Google Blue
 
@@ -114,6 +144,7 @@ background-color: $lightGrey;
 
   .dashboard-wrap {
     width: 100%;
+    height: 100vh;
 }
 }
 
