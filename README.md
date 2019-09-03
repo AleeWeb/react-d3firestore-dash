@@ -1,7 +1,7 @@
 
 ## React, Firebase Auth, D3 and Cloud Firestore Database
 
-<p>This project will visualize data from Cloud Firestore database using D3 and enable Firebase auth login.</p>
+<p>This project visualizes data from a Cloud Firestore database using D3 and enables Firebase auth login and registration!</p>
 
 <a href="https://ms-dashboard-70187.firebaseapp.com/" target="_blank"><img src="https://i.imgur.com/Z0xdtIl.jpg" alt="Dashboard Screenshot" /></a>
 
