@@ -55,28 +55,69 @@ position: relative;
 
 .firebaseui-idp-google { 
   background-color: #F8F8F8 !important;
-}
-
-.firebase-btns {
   position: relative;
-  right: 30px;
+  right: 25px !important;
 }
 
-.firebaseui-idp-password {
-background: linear-gradient(to bottom right,#48D1CC, #6A5ACD) !important;
+
+.register {
+  position: relative;
+  left: 9px;
+  color: #fff !important;
+  background: linear-gradient(to bottom right,#48D1CC, #6A5ACD);
+  margin-bottom: 20px;
 }
+
 
 .login-header {
   position: relative;
   left: 8px;
-  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .btn-info {
   margin-bottom: 30px;
 }
 
-// background-color: #4885ed !important; Google Blue
+.bg-signup {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/bg_signup.jpg');  
+  background-size: cover;
+  color: #fff;
+
+
+  &:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#48D1CC, #6A5ACD);
+	opacity: .8; 
+  }
+}
+
+.signup-wrap  {
+  position: relative;
+  top: 30px;
+}
+
+.homelink {
+  z-index: 200;
+    position: relative;
+    top: 200px;
+    right: 410px;
+    display: block;
+}
+
+.form-link {
+  color: #00FFFF;
+  font-weight: bold;
+}
+
+
 
 
 
@@ -86,7 +127,7 @@ background: linear-gradient(to bottom right,#48D1CC, #6A5ACD) !important;
 .side-nav {
   background-color: #3d0099;
   padding: 30px;
-  min-height: 900px;
+  height: 100vh;
 }
 
 .dashboard-wrap {
@@ -123,6 +164,7 @@ background: linear-gradient(to bottom right,#48D1CC, #6A5ACD) !important;
 .piestyle {
   position: relative;
   top: 70px;
+  min-height: 400px;
 }
 
 .pie-btnstyle  {
@@ -140,18 +182,61 @@ background: linear-gradient(to bottom right,#48D1CC, #6A5ACD) !important;
 }
 
 // Large screen tweaks
-@media (min-width: 1400px) {
-
-  .dashboard-wrap {
-    width: 100%;
-    height: 100vh;
-}
-}
-
 @media (width: 1400px) {
 
-.side-nav {
-height: 1020px;
+    .dashboard-wrap {
+      width: 100%;
+      height: 100vh;
+  }
+
+  .firebaseui-idp-google { 
+    background-color: #F8F8F8 !important;
+    position: relative;
+    right: 53px !important;
+  }
 }
+
+
+
+@media (min-width: 1600px) and (max-width: 1680px) {
+
+    .login-right {
+      position: relative;
+      left: 30px;
+      height: 105vh;
+  }
+
+  .firebaseui-idp-google { 
+    background-color: #F8F8F8 !important;
+    position: relative;
+    right: 77px !important;
+  }
+}
+
+
+
+@media (min-width: 1820px) and (max-width: 2000px) {
+
+    .login-right {
+      position: relative;
+      left: 200px;
+      height: 107vh;
+  }
+
+  .firebaseui-idp-google { 
+    background-color: #F8F8F8 !important;
+    position: relative;
+    right: 77px !important;
+  }
+}
+
+
+
+@media (min-width: 1300px) and (max-width: 1366px) {
+  .firebaseui-idp-google { 
+    background-color: #F8F8F8 !important;
+    position: relative;
+    right: 44px !important;
+  }
 
 }

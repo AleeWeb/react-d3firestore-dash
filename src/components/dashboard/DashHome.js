@@ -4,8 +4,7 @@ import { Container, Col, Card, Row } from 'reactstrap';
 import SideNav from './SideNav';
 import BarChart from '../charts/BarChart';
 import Pie from '../charts/Pie';
-import PlotChart from '../charts/PlotChart';
-import LineChart from '../charts/LineChart';
+//import PlotChart from '../charts/PlotChart';
 
 
 export default function DashHome() {
@@ -59,17 +58,13 @@ export default function DashHome() {
                 </Row>
 
                 <Row>
-                    <Col md="8">
+                    <Col md="12">
                         <Card>
-                            <PlotChart />
+                            {/*<PlotChart /> */}
                         </Card>
                     </Col>
 
-                    <Col md="4">
-                        <Card>
-                            <LineChart />
-                        </Card>
-                    </Col>
+                    
                 </Row>
             </Container>
 

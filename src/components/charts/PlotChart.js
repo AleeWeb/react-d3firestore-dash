@@ -38,7 +38,7 @@ export default class PlotChart extends Component {
     return (
       <div className="centered-and-flexed text-center">
 
-        <XYPlot width={650} height={275}>
+        <XYPlot width={850} height={275}>
           <VerticalGridLines />
           <HorizontalGridLines />
           <XAxis />

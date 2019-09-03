@@ -7,18 +7,19 @@ const db = firebase.firestore();
 export default function BarChart() {
   
     useEffect(() => {
+    
         //Firestore database collection title is sales.
         db.collection('sales').get().then(res => { //database server response
             let data = [];
             res.docs.forEach(doc => {   //Firestore documents inside db collections
                 data.push(doc.data()); //D3 data() method on the firestore doc to get the data in the doc.
             });
-            console.log(data);
+        //  console.log(data);
 
             // select the svg container first
             const svg = d3.select('.canvas')
                 .append('svg')
-                .attr('width', '600')
+                .attr('width', '640')
                 .attr('height', '400');
 
             //----------- Start custom D3 code below HERE-----------------

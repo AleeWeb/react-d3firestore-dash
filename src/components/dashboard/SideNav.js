@@ -3,15 +3,27 @@ import { Redirect } from "react-router";
 import { Nav, NavItem, NavLink, Button } from 'reactstrap';
 import firebase from "../../firebaseConfig";
 
+
+let unsubscribe = firebase.auth().onAuthStateChanged(function (user) {
+  if (user) {
+     // User is signed in.
+  }
+});
+
 class SideNav extends Component {
   state = {
     isSignedIn: true
   }
-
+  
   componentDidMount = () => {
-    firebase.auth().onAuthStateChanged(user => {
-      this.setState({ isSignedIn: user })
+    unsubscribe = firebase.auth().onAuthStateChanged(user => {
+      this.setState({
+        isSignedIn: user
+      })
     })
+  }
+  componentWillUnmount() {
+    unsubscribe()
   }
 
   render() {
