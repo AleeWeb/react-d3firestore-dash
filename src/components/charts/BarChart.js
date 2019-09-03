@@ -5,22 +5,20 @@ import * as d3 from "d3";
 const db = firebase.firestore();
 
 export default function BarChart() {
-  
+
     useEffect(() => {
-    
+
         //Firestore database collection title is sales.
         db.collection('sales').get().then(res => { //database server response
             let data = [];
             res.docs.forEach(doc => {   //Firestore documents inside db collections
                 data.push(doc.data()); //D3 data() method on the firestore doc to get the data in the doc.
             });
-        //  console.log(data);
+            console.log(data);
 
             // select the svg container first
-            const svg = d3.select('.canvas')
-                .append('svg')
-                .attr('width', '640')
-                .attr('height', '400');
+            const svg = d3.select('.svg-canvas')
+            svg.selectAll("*").remove()
 
             //----------- Start custom D3 code below HERE-----------------
 
@@ -70,8 +68,8 @@ export default function BarChart() {
                 .attr('x', (d) => x(d.date))
                 .attr('y', graphHeight)
                 .transition().duration(500)
-                 .attr('y', d => y(d.amount))
-                 .attr("height", d => graphHeight - y(d.amount))
+                .attr('y', d => y(d.amount))
+                .attr("height", d => graphHeight - y(d.amount))
 
             // create & call axesit
             const xAxis = d3.axisBottom(x);
@@ -95,8 +93,8 @@ export default function BarChart() {
     return (
         <div className="canvas">
             <h5 className="text-center">2018-2019 Sales Data</h5>
+            <svg className="svg-canvas" width="640px" height="400px" />
         </div>
     );
 
 }
-
