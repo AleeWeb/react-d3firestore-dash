@@ -37,11 +37,9 @@ class SideNav extends Component {
             <NavLink href="#">Link</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#">Another Link</NavLink>
+            <NavLink href="#">Link</NavLink>
           </NavItem>
-          <NavItem>
-            <NavLink disabled href="#">Disabled Link</NavLink>
-          </NavItem>
+          
 
           {this.state.isSignedIn ? (
             <div>

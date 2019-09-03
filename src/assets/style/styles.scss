@@ -120,14 +120,13 @@ position: relative;
 
 
 
-
 /* ----- Dashboard styles ----- */
 
 
 .side-nav {
+  width: 200px;
   background-color: #3d0099;
   padding: 30px;
-  height: 100vh;
 }
 
 .dashboard-wrap {
@@ -142,6 +141,11 @@ position: relative;
 .spacer {
   margin-top: 20px;
   margin-bottom: 40px;
+}
+
+
+.right-side {
+  margin-bottom: 20px;
 }
 
 .block-wrap {
