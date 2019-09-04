@@ -56,7 +56,7 @@ position: relative;
 .firebaseui-idp-google { 
   background-color: #F8F8F8 !important;
   position: relative;
-  right: 25px !important;
+  right: 24px !important;
 }
 
 
@@ -136,6 +136,7 @@ position: relative;
 .dashboard-wrap {
   display: inline-flex;
   background-color: #fbfcfd;
+  width: 100%;
 }
 
 .card {
@@ -219,6 +220,13 @@ position: relative;
     position: relative;
     right: 77px !important;
   }
+
+}
+
+@media (width: 1680px) {
+.dashboard-wrap {
+  height: 100vh;
+}
 }
 
 
@@ -235,6 +243,10 @@ position: relative;
     background-color: #F8F8F8 !important;
     position: relative;
     right: 77px !important;
+  }
+
+  .dashboard-wrap {
+    height: 100vh;
   }
 }
 
