@@ -30,4 +30,4 @@
 
 <h4>Google API</h4>
 
-<p>Go to <a href="https://console.cloud.google.com" target="_blank">https://console.cloud.google.com</a> and create a project that you will use to obtain the Google Auth API credentials for the Firebase Auth></p>
+<p>Go to <a href="https://console.cloud.google.com" target="_blank">https://console.cloud.google.com</a> and create a project that you will use to obtain the Google Auth API credentials for the Firebase Auth</p>
